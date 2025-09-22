@@ -1,0 +1,58 @@
+export const clientLogos = [
+  {
+    id: "logo-1",
+    src: "/img/clients-logo-01.png",
+    alt: "لوگوی مشتری 1",
+    width: 100,
+    height: 40,
+  },
+  {
+    id: "logo-2",
+    src: "/img/clients-logo-02.png",
+    alt: "لوگوی مشتری 2",
+    width: 100,
+    height: 40,
+  },
+  {
+    id: "logo-3",
+    src: "/img/clients-logo-03.png",
+    alt: "لوگوی مشتری 3",
+    width: 100,
+    height: 40,
+  },
+  {
+    id: "logo-4",
+    src: "/img/clients-logo-04.png",
+    alt: "لوگوی مشتری 4",
+    width: 100,
+    height: 40,
+  },
+  {
+    id: "logo-5",
+    src: "/img/clients-logo-05.png",
+    alt: "لوگوی مشتری 5",
+    width: 100,
+    height: 40,
+  },
+  {
+    id: "logo-6",
+    src: "/img/clients-logo-06.png",
+    alt: "لوگوی مشتری 6",
+    width: 100,
+    height: 40,
+  },
+  {
+    id: "logo-7",
+    src: "/img/clients-logo-07.png",
+    alt: "لوگوی مشتری 7",
+    width: 100,
+    height: 40,
+  },
+  {
+    id: "logo-8",
+    src: "/img/clients-logo-08.png",
+    alt: "لوگوی مشتری 8",
+    width: 100,
+    height: 40,
+  },
+];

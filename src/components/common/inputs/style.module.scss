@@ -1,0 +1,64 @@
+.inputs {
+    position: relative;
+    margin-bottom: 32px;
+    border: #A30E7B solid 1px;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+
+    .peer {
+        width: 100%;
+        color: #000;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        &::-internal-autofill-selected {
+            background-image: none !important;
+            background-color:transparent !important;
+        }
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:not(:placeholder-shown)~.label_peer {
+
+            top: -12px;
+            font-size: 12px;
+            background-color: white;
+            border-radius: 4px;
+            padding-inline: 8px;
+        }
+
+        &:focus~.label_peer {
+            top: -12px;
+            font-size: 12px;
+            background-color: white;
+            border-radius: 4px;
+            padding-inline: 8px;
+        }
+
+        &:focus~.ul {
+            display: block;
+        }
+    }
+
+    .label_peer {
+        position: absolute;
+        inset-inline-start: 8px;
+        top: 12px;
+        font-size: 14px;
+        color: #A30E7B;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;    
+    }
+}

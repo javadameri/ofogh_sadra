@@ -1,0 +1,101 @@
+/* CSS Variables based on the provided style.css */
+
+/* Color Variables */
+:root {
+  --primary-color: #2e57a7; /* Primary brand color */
+  --secondary-color: #ffa133; /* Secondary brand color */
+  --white: #ffffff; /* White */
+  --gray-light-bg: #f5f7fa; /* Light gray background, adjusted to complement primary */
+  --text-color: #5c6b8a; /* Default text color, derived from primary */
+  --text-dark: #1a2e5a; /* Darker text color, deepened from primary */
+  --text-darker: #0f1c3d; /* Darkest text for menus, darkened further */
+  --border-color: #e0e4ed; /* Border color, lightened to match palette */
+  --gradient-bg: linear-gradient(
+    -75deg,
+    #2e57a7 10%,
+    #ffa133
+  ); /* Gradient background using primary and secondary */
+  --color-1: #ff6f61; /* Additional color 1, warm coral to complement secondary */
+  --color-1-bg: rgba(255, 111, 97, 0.15); /* Color 1 background */
+  --color-2: #4a7cd8; /* Additional color 2, lighter variant of primary */
+  --color-2-bg: rgba(74, 124, 216, 0.15); /* Color 2 background */
+  --color-3: #00a3b5; /* Additional color 3, teal for contrast */
+  --color-3-bg: rgba(0, 163, 181, 0.15); /* Color 3 background */
+  --color-4: #ff914d; /* Additional color 4 / Rating color, orange variant from secondary */
+  --color-4-bg: rgba(255, 145, 77, 0.15); /* Color 4 background */
+  --color-5: #2db57d; /* Additional color 5 / Success color, green for balance */
+  --color-5-bg: rgba(45, 181, 125, 0.15); /* Color 5 background */
+  --color-6: #e85c4a; /* Additional color 6, muted red for warmth */
+  --color-6-bg: rgba(232, 92, 74, 0.15); /* Color 6 background */
+  --overlay-dark: #0d1a3a; /* Dark overlay for sliders, derived from primary */
+  --overlay-gradient: linear-gradient(
+    -75deg,
+    rgba(46, 87, 167, 0.88) 10%,
+    rgba(255, 161, 51, 0.88)
+  ); /* Gradient overlay using primary and secondary */
+  --success-text: #ffffff; /* Success text color, unchanged */
+  --pricing-dark: #1e3a7a; /* Dark color for pricing headers, deepened from primary */
+  --tooltip-bg: #ffffff; /* Tooltip background, unchanged */
+  --tooltip-text: #2a2a2a; /* Tooltip text color, darkened slightly */
+  --blog-post-title: #4a5568; /* Blog post title color, neutral to match text */
+  --blog-meta: #606f89; /* Blog meta text color, derived from primary */
+  --blog-border: #ebedf3; /* Blog border color, lightened */
+  --widget-title: #6b7280; /* Widget title color, neutral gray */
+  --tag-bg: #f1f3f7; /* Tag background, lightened to match palette */
+  --error-bg: #fff4f2; /* Error background, softened to fit palette */
+}
+
+/* Typography Variables */
+:root {
+  --font-family: "iransans", sans-serif; /* Default font family */
+  --font-size-base: 1rem; /* Base font size (15px) */
+  --font-size-small: 0.8rem; /* Small text size */
+  --font-size-badge: 77%; /* Badge font size */
+  --font-weight-base: 400; /* Base font weight */
+  --font-weight-bold: 600; /* Bold font weight */
+  --font-weight-bolder: 700; /* Bolder font weight */
+  --line-height-base: 1.75; /* Default line height */
+  --line-height-heading: 1.21; /* Heading line height */
+  --h1-font-size: 3.052em; /* H1 font size */
+  --h2-font-size: 2.341em; /* H2 font size */
+  --h3-font-size: 1.953em; /* H3 font size */
+  --h4-font-size: 1.563em; /* H4 font size */
+  --h5-font-size: 1.25em; /* H5 font size */
+}
+
+/* Spacing Variables */
+:root {
+  --padding-section: 100px; /* Default section padding */
+  --padding-section-sm: 55px; /* Section padding for small screens */
+  --padding-btn: 12px 30px; /* Button padding */
+  --padding-form: 0.75rem 0.85rem; /* Form input padding */
+  --margin-bottom-p: 1.25em; /* Paragraph margin bottom */
+  --margin-bottom-form: 1rem; /* Form group margin bottom */
+  --border-radius: 4px; /* Default border radius */
+  --border-radius-lg: 15px; /* Larger border radius */
+  --border-radius-pill: 50rem; /* Pill border radius */
+  --box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.15); /* Default box shadow */
+  --box-shadow-hover: 0 1rem 3rem rgba(31, 45, 61, 0.125); /* Hover box shadow */
+}
+
+/* Component-Specific Variables */
+:root {
+  --btn-transition: all 0.25s ease-in-out; /* Button transition */
+  --progress-bar-bg: #e80566; /* Progress bar background */
+  --progress-bg: #ebebeb; /* Progress container background */
+  --progress-height: 12px; /* Progress bar height */
+  --icon-sm: 25px; /* Small icon size */
+  --icon-md: 40px; /* Medium icon size */
+  --icon-lg: 50px; /* Large icon size */
+  --form-control-height: calc(2.56em + 0.75rem + 2px); /* Form control height */
+  --tooltip-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px; /* Tooltip shadow */
+  --pagination-size: 35px; /* Pagination button size */
+}
+
+/* Breakpoint-Specific Variables */
+:root {
+  --hero-height: 700px; /* Hero section height */
+  --hero-height-sm: 500px; /* Hero section height for small screens */
+  --footer-padding: 65px 0; /* Footer top padding */
+  --footer-padding-sm: 50px 0; /* Footer top padding for small screens */
+}

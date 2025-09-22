@@ -1,0 +1,68 @@
+.call-to-action {
+    position: relative;
+    color: white;
+}
+
+.call-to-action::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* گرادیان برای خوانایی متن */
+    z-index: 1;
+}
+
+.circle-box {
+    position: relative;
+    z-index: 2;
+}
+
+.chart {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.circle-progress {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: conic-gradient(#007bff 0deg, #e9ecef 0deg);
+}
+
+.circle-progress span {
+    background: black;
+    color: #007bff;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.progress-info span {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress-info h5 {
+    font-size: 1.25rem;
+}
+
+/* پاسخ‌گویی برای موبایل */
+@media (max-width: 576px) {
+    .call-to-action .col-sm-6 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
