@@ -20,7 +20,7 @@ export const TeamTwoSection = ({
         <div className="row justify-content-center">
           <div className="col-md-8 col-lg-8">
             <div className="section-heading text-center mb-5">
-              <strong className="color-secondary">{subtitle}</strong>
+              {/* <strong className="color-secondary">{subtitle}</strong> */}
               <h2>{title}</h2>
               <span className="animate-border mx-auto mb-4"></span>
               <p className="lead">{description}</p>

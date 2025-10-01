@@ -27,7 +27,7 @@ export const Services2Section = ({
         <div className="row justify-content-center">
           <div className="col-md-8">
             <div className="section-heading text-center mb-4">
-              <strong className="color-secondary">{subtitle}</strong>
+              {/* <strong className="color-secondary">{subtitle}</strong> */}
               <h2>{title}</h2>
               <span className="animate-border mx-auto mb-4"></span>
               <p className="lead">{description}</p>
@@ -36,7 +36,7 @@ export const Services2Section = ({
         </div>
         <div className="row">
           {services.map((service, index) => (
-            <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
+            <div className="col-lg-4 col-md-6 col-sm-6 my-3" key={index}>
               <Service2Single
                 icon={service.icon}
                 title={service.title}

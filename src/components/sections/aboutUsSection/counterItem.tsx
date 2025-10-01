@@ -1,7 +1,7 @@
 "use client";
 
 interface CounterItemProps {
-  count: number;
+  count: number | string;
   label: string;
 }
 

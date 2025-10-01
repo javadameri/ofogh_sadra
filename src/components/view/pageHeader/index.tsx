@@ -11,7 +11,7 @@ interface BreadcrumbItem {
 interface PageHeaderSectionProps {
   title: string;
   backgroundImage: string;
-  breadcrumbItems: BreadcrumbItem[];
+  breadcrumbItems?: BreadcrumbItem[];
   isRtl?: boolean;
 }
 
@@ -33,27 +33,29 @@ export const PageHeaderSection: React.FC<PageHeaderSectionProps> = ({
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-8 col-lg-7">
-            <div className="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
+            <div className="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-5">
               <h1 className="text-white mb-0 position-relative">{title}</h1>
-              <nav className="custom-breadcrumb" aria-label="مسیر ناوبری">
-                <ol className="breadcrumb d-inline-block bg-transparent py-0">
-                  {breadcrumbItems.map((item, index) => (
-                    <li
-                      key={index}
-                      className={`list-inline-item breadcrumb-item ${
-                        item.isActive ? "active" : ""
-                      }`}
-                      {...(item.isActive ? { "aria-current": "page" } : {})}
-                    >
-                      {item.link && !item.isActive ? (
-                        <Link href={item.link}>{item.label}</Link>
-                      ) : (
-                        <span>{item.label}</span>
-                      )}
-                    </li>
-                  ))}
-                </ol>
-              </nav>
+              {breadcrumbItems && (
+                <nav className="custom-breadcrumb" aria-label="مسیر ناوبری">
+                  <ol className="breadcrumb d-inline-block bg-transparent py-0">
+                    {breadcrumbItems.map((item, index) => (
+                      <li
+                        key={index}
+                        className={`list-inline-item breadcrumb-item ${
+                          item.isActive ? "active" : ""
+                        }`}
+                        {...(item.isActive ? { "aria-current": "page" } : {})}
+                      >
+                        {item.link && !item.isActive ? (
+                          <Link href={item.link}>{item.label}</Link>
+                        ) : (
+                          <span>{item.label}</span>
+                        )}
+                      </li>
+                    ))}
+                  </ol>
+                </nav>
+              )}
             </div>
           </div>
         </div>

@@ -42,9 +42,9 @@ export const ClientSliderSection = ({
             </div>
           </div>
           <div className="col-md-6 col-lg-6">
-            <div className="client-para">
+            {/* <div className="client-para">
               <p>{description}</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="row align-items-center justify-content-center mb-4">

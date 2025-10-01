@@ -18,3 +18,4 @@ export * from "./promo3Section";
 export * from "./ctaCircleProgressSection";
 export * from "./clientSliderSection";
 export * from "./services2Section";
+export * from "./servicesSectionHome";

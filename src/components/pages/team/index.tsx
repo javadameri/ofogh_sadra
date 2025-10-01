@@ -10,27 +10,22 @@ import { teamMembers } from "@/constants/teamTwo";
 export const Team = () => {
   return (
     <div className="main">
-      {/* <!--header section start--> */}
+      {/* بخش هدر */}
       <PageHeaderSection
-        title="تیم دوم ما"
+        title="تیم ما"
         backgroundImage="/img/header-bg-5.jpg"
-        breadcrumbItems={[
-          { label: "خانه", link: "/" },
-          { label: "صفحات", link: "/pages" },
-          { label: "تیم دوم ما", isActive: true },
-        ]}
-        isRtl={true}
+        isRtl={true} // راست‌چین
       />
 
-      {/* <!--team two section start--> */}
+      {/* بخش تیم */}
       <TeamTwoSection
-        subtitle="تیم ما"
-        title="با تیم حرفه‌ای ما آشنا شوید"
-        description="تیم ما متشکل از متخصصان با تجربه در طراحی و توسعه وب است که با اشتیاق به خلق وب‌سایت‌های خلاقانه و کارآمد برای مشتریانمان می‌پردازند."
+        subtitle="با تیم ما آشنا شوید"
+        title="تیم حرفه‌ای ما را بشناسید"
+        description="تیم ما متشکل از متخصصین باتجربه در طراحی و توسعه وب است که با اشتیاق وب‌سایت‌های خلاقانه و کارآمد برای مشتریان ایجاد می‌کنند."
         members={teamMembers}
       />
 
-      {/* <!--call to action progressbar start--> */}
+      {/* بخش call to action با نمودار پیشرفت */}
       <CTACircleProgressSection
         backgroundImage="/img/ctg-bg-2.jpg"
         stats={[
@@ -42,28 +37,28 @@ export const Team = () => {
           {
             percent: 85,
             description: "بهینه‌سازی پیشرفته",
-            label: "سئوی حرفه‌ای",
+            label: "سئو حرفه‌ای",
           },
           {
             percent: 80,
-            description: "توسعه سفارشی",
+            description: "توسعه اختصاصی",
             label: "توسعه وب",
           },
           {
             percent: 95,
-            description: "پشتیبانی مداوم",
-            label: "پشتیبانی 24/7",
+            description: "پشتیبانی مستمر",
+            label: "پشتیبانی ۲۴/۷",
           },
         ]}
       />
 
-      {/* <!--contact us section start--> */}
+      {/* بخش تماس با ما */}
       <section className="contact-us-section ptb-100">
         <div className="container">
           <div className="row justify-content-around">
             <div className="col-md-6">
               <div className="contact-us-form gray-light-bg rounded p-5">
-                <h4>برای شروع آماده هستید؟</h4>
+                <h4>آماده شروع هستید؟</h4>
                 <form
                   action="#"
                   method="POST"
@@ -77,7 +72,7 @@ export const Team = () => {
                           type="text"
                           className="form-control"
                           name="name"
-                          placeholder="نام را وارد کنید"
+                          placeholder="نام خود را وارد کنید"
                         />
                       </div>
                     </div>
@@ -87,7 +82,7 @@ export const Team = () => {
                           type="email"
                           className="form-control"
                           name="email"
-                          placeholder="ایمیل را وارد کنید"
+                          placeholder="ایمیل خود را وارد کنید"
                         />
                       </div>
                     </div>
@@ -99,7 +94,7 @@ export const Team = () => {
                           className="form-control"
                           rows={7}
                           cols={25}
-                          placeholder="پیام"
+                          placeholder="پیام شما"
                         ></textarea>
                       </div>
                     </div>
@@ -109,7 +104,7 @@ export const Team = () => {
                         className="btn secondary-solid-btn"
                         id="btnContactUs"
                       >
-                        پیام فرستادن
+                        ارسال پیام
                       </button>
                     </div>
                   </div>
@@ -118,18 +113,18 @@ export const Team = () => {
             </div>
             <div className="col-md-5">
               <div className="contact-us-content">
-                <h2>آیا به دنبال یک ایده عالی برای تجارت هستید؟</h2>
+                <h2>به دنبال یک ایده کسب‌وکار عالی هستید؟</h2>
                 <p className="lead">
-                  یکپارچه ارائه خدمات الکترونیکی همه گیر و ابتکارات نسل بعدی.
+                  خدمات دیجیتال یکپارچه و پروژه‌های نسل بعدی.
                 </p>
                 <a href="#" className="btn outline-btn align-items-center">
-                  دریافت جهات
+                  مسیر دسترسی
                 </a>
                 <hr className="my-5" />
                 <h5>دفتر مرکزی ما</h5>
-                <address>تهران ونک خیابان بهار</address>
+                <address>تهران، ونک، خیابان بهار</address>
                 <br />
-                <span>تلفن: 021535345345 </span> <br />
+                <span>تلفن: ۰۲۱۵۳۵۳۴۵۳۴۵ </span> <br />
                 <span>
                   ایمیل:{" "}
                   <a href="mailto:email@yourdomain.com" className="link-color">
@@ -141,16 +136,14 @@ export const Team = () => {
           </div>
         </div>
       </section>
-      {/* <!--contact us section end--> */}
 
-      {/* <!--client section start--> */}
+      {/* بخش مشتریان */}
       <ClientSliderSection
         backgroundImage="/img/client-bg.jpg"
-        title="مشتریان ما گواه کیفیت خدمات ماست"
-        description="ما افتخار می‌کنیم که با برندهای معتبر همکاری کرده‌ایم و وب‌سایت‌هایی خلاقانه و کارآمد برای آن‌ها طراحی کرده‌ایم."
+        title="مشتریان ما کیفیت ما را تأیید می‌کنند"
+        description="ما افتخار داریم با برندهای مطرح همکاری کرده و برای آن‌ها وب‌سایت‌های خلاقانه و کارآمد ایجاد کرده‌ایم."
         clientLogos={clientLogos}
       />
-      {/* <!--client section end--> */}
     </div>
   );
 };

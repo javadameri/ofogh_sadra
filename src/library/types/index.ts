@@ -2,6 +2,16 @@ export interface SocialLink {
   platform: "facebook" | "linkedin" | "dribbble";
   url: string;
 }
+export interface Service {
+  id: string;
+  icon: any;
+  title: string;
+  description: string;
+  longDescription: string[];
+  image: { src: string; alt: string; width: number; height: number };
+  features: string[];
+  link: string;
+}
 
 export interface TeamMember {
   id: string;

@@ -1,50 +1,32 @@
-import { processStepList } from "@/constants/processStepList";
 import { teamMembers } from "@/constants/teamTwo";
 import PageHeaderSection from "@/components/view/pageHeader";
-import {
-  AboutUsSection,
-  ClientSliderSection,
-  CTACircleProgressSection,
-  PromoSection,
-  TeamTwoSection,
-  WorkProcessSection,
-} from "@/components/sections";
-import { promos } from "@/constants/promoitems";
-import { clientLogos } from "@/constants/clientSlider";
+import { AboutUsSection, TeamTwoSection } from "@/components/sections";
 
 export const AboutUs = () => {
   return (
     <main className="main">
-      {/* <!--header section start--> */}
+      {/* بخش هدر */}
       <PageHeaderSection
         title="درباره ما"
         backgroundImage="/img/header-bg-5.jpg"
-        breadcrumbItems={[
-          { label: "خانه", link: "/" },
-          { label: "صفحات", link: "/pages" },
-          { label: "درباره ما", isActive: true },
-        ]}
-        isRtl={true}
+        isRtl={true} // راست‌چین
       />
 
-      {/* <!--promo section start--> */}
-      <PromoSection promos={promos} />
-
-      {/* <!--about us section start--> */}
+      {/* بخش درباره ما */}
       <AboutUsSection
-        subtitle="درباره ما"
-        title="ما شریک شما در خلق وب‌سایت‌های حرفه‌ای هستیم"
-        description="تیم ما با سال‌ها تجربه در طراحی و توسعه وب، وب‌سایت‌هایی خلاقانه و کارآمد ارائه می‌دهد که به رشد کسب‌وکار شما کمک می‌کند."
+        subtitle="چرا ما متمایز هستیم:"
+        title="شریک شما در توسعه حضور دیجیتال"
+        description="شرکت افق صدرا در سال ۲۰۱۵ در شهر مشهد تأسیس شد و هدف آن ارائه راهکارهای وب و موبایل برای مشتریان محلی بود. در طول سال‌ها، فعالیت‌های ما گسترش یافت و اکنون از مشتریان بین‌المللی نیز پشتیبانی می‌کنیم."
         features={[
-          { text: "طراحی وب‌سایت‌های", highlight: "کاربرپسند" },
+          { text: "وب‌سایتی کاربرپسند", highlight: "طراحی" },
           { text: "بهینه‌سازی حرفه‌ای", highlight: "سئو" },
-          { text: "توسعه وب", highlight: "سفارشی" },
-          { text: "پشتیبانی", highlight: "24/7" },
-          { text: "تجربه کاربری", highlight: "بی‌نظیر" },
+          { text: "توسعه وب سفارشی", highlight: "سفارشی" },
+          { text: "پشتیبانی ۲۴/۷", highlight: "پشتیبانی" },
+          { text: "تجربه کاربری بی‌نظیر", highlight: "UX" },
         ]}
         counters={[
-          { count: 500, label: "پروژه‌های موفق" },
-          { count: 1000, label: "مشتری راضی" },
+          { count: "۲۵+", label: "پروژه موفق" },
+          { count: "۲۰+", label: "مشتریان راضی" },
           { count: 10, label: "سال تجربه" },
         ]}
         mainImage={{
@@ -59,59 +41,16 @@ export const AboutUs = () => {
           width: 540,
           height: 670,
         }}
-        ctaPrimary={{ text: "اکنون شروع کنید", link: "/contact" }}
-        ctaSecondary={{ text: "بیشتر بدانید", link: "/about" }}
+        ctaPrimary={{ text: "همین حالا شروع کنید", link: "/contact" }}
+        ctaSecondary={{ text: "اطلاعات بیشتر", link: "/about" }}
       />
 
-      {/* <!--work process section start--> */}
-      <WorkProcessSection
-        subtitle="فرآیند کار"
-        title="مراحل طراحی و توسعه وب‌سایت حرفه‌ای"
-        description="ما با یک فرآیند ساختاریافته و شفاف، وب‌سایت‌هایی خلاقانه و کارآمد برای شما طراحی و توسعه می‌دهیم که نیازهای کسب‌وکارتان را برآورده کند."
-        processes={processStepList}
-      />
-
-      {/* <!--call to action progressbar start--> */}
-      <CTACircleProgressSection
-        backgroundImage="/img/ctg-bg-2.jpg"
-        stats={[
-          {
-            percent: 90,
-            description: "طراحی خلاقانه",
-            label: "طراحی UI/UX",
-          },
-          {
-            percent: 85,
-            description: "بهینه‌سازی پیشرفته",
-            label: "سئوی حرفه‌ای",
-          },
-          {
-            percent: 80,
-            description: "توسعه سفارشی",
-            label: "توسعه وب",
-          },
-          {
-            percent: 95,
-            description: "پشتیبانی مداوم",
-            label: "پشتیبانی 24/7",
-          },
-        ]}
-      />
-
-      {/* <!--team two section start--> */}
+      {/* بخش تیم */}
       <TeamTwoSection
         subtitle="تیم ما"
         title="با تیم حرفه‌ای ما آشنا شوید"
-        description="تیم ما متشکل از متخصصان با تجربه در طراحی و توسعه وب است که با اشتیاق به خلق وب‌سایت‌های خلاقانه و کارآمد برای مشتریانمان می‌پردازند."
+        description="تیم ما متشکل از متخصصین باتجربه در طراحی و توسعه وب است که با اشتیاق وب‌سایت‌های خلاقانه و کارآمد برای مشتریان ایجاد می‌کنند."
         members={teamMembers}
-      />
-
-      {/* <!--client section start--> */}
-      <ClientSliderSection
-        backgroundImage="/img/client-bg.jpg"
-        title="مشتریان ما گواه کیفیت خدمات ماست"
-        description="ما افتخار می‌کنیم که با برندهای معتبر همکاری کرده‌ایم و وب‌سایت‌هایی خلاقانه و کارآمد برای آن‌ها طراحی کرده‌ایم."
-         clientLogos={clientLogos}
       />
     </main>
   );

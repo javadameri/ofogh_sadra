@@ -11,7 +11,7 @@ interface Feature {
 }
 
 interface Counter {
-  count: number;
+  count: number | string;
   label: string;
 }
 
@@ -62,10 +62,13 @@ export const AboutUsSection = ({
           </div>
           <div className="col-lg-6">
             <div className="about-us-content-wrap">
-              <strong className="text-secondary">{subtitle}</strong>
+              {/* <strong className="text-secondary">{subtitle}</strong> */}
               <h3>{title}</h3>
               <span className="animate-border mb-4"></span>
               <p>{description}</p>
+              <p>
+                <strong>{subtitle}</strong>
+              </p>
               <ul className="list-unstyled tech-feature-list">
                 {features.map((feature, index) => (
                   <li key={index} className="py-1">
@@ -83,7 +86,7 @@ export const AboutUsSection = ({
                   </div>
                 ))}
               </div>
-              <div className="mt-4">
+              {/* <div className="mt-4">
                 <Link
                   href={ctaPrimary.link}
                   className="btn secondary-solid-btn me-3"
@@ -96,7 +99,7 @@ export const AboutUsSection = ({
                 >
                   {ctaSecondary.text}
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

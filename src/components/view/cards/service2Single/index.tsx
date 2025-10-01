@@ -17,19 +17,19 @@ export const Service2Single = ({
   link,
 }: ServiceSingleProps) => {
   return (
-    <div className="services-single p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm rounded white-bg">
+    <div className="services-single p-5 h-100 my-sm-0 shadow-sm rounded white-bg">
       <span className="ti-announcement icon-lg color-primary d-block mb-4">
         {" "}
         <Icon size={50} />
       </span>
       <h5 className="">{title}</h5>
       <p className="">{description}</p>
-      <Link href={link} target="_blank" className="detail-link mt-4">
+      {/* <Link href={link} target="_blank" className="detail-link mt-4">
         بیشتر بخوانید{" "}
         <span>
           <IconArrowLeft size={18} />
         </span>
-      </Link>
+      </Link> */}
     </div>
   );
 };
