@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "خدمات ما | افق صدرا",
     description:
       "خدمات حرفه‌ای افق صدرا در طراحی وب، توسعه، سئو و راه‌حل‌های دیجیتال متناسب با نیازهای کسب‌وکار شما.",
-    images: ["/img/services-hero.jpg"],
+    images: ["/img/logo-color.png"],
     url: "https://ofoghesadra.ir/services", // بهتره مسیر فارسی باشه
     siteName: "SadraSoft",
     locale: "fa_IR", // برای فارسی

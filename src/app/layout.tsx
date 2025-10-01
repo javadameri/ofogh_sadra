@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     title: "داده پردازان افق آینده صدرا | طراحی و توسعه وب حرفه‌ای",
     description:
       "ما وب‌سایت‌هایی خلاقانه، کاربرپسند و بهینه‌سازی‌شده برای موتورهای جستجو طراحی می‌کنیم که به رشد کسب‌وکار شما کمک می‌کند.",
-    images: ["/img/logo.png"], // تصویر پیش‌فرض برای کل سایت
+    images: ["/img/logo-color.png"], // تصویر پیش‌فرض برای کل سایت
   },
   robots: {
-    index: false, // noindex
-    follow: false, // nofollow
+    index: true, 
+    follow: true,
   },
 };
 export default function RootLayout({

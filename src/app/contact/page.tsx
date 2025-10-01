@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "ارتباط با ما | داده پردازان افق آینده صدرا",
     description:
       "راه های ارتباطی با تیم داده پردازان افق آینده صدرا.",
-    images: ["/img/about-us-hero.jpg"],
+    images: ["/img/logo-color.png"],
   },
 };
 
