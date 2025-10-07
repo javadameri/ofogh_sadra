@@ -11,6 +11,14 @@ export const metadata: Metadata = {
       "با تیم حرفه‌ای و ماموریت ما برای ارائه خدمات طراحی و توسعه وب آشنا شوید.",
     images: ["/img/logo-color.png"],
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export const revalidate = 60;

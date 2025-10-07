@@ -3,7 +3,9 @@ import "@/app/globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.PUBLIC_BASE_URL || "https://ofoghesadra.ir"),
+  metadataBase: new URL(
+    process.env.PUBLIC_BASE_URL || "https://ofoghesadra.ir"
+  ),
   title: "داده پردازان افق آینده صدرا | طراحی و توسعه وب حرفه‌ای",
   description:
     "ما وب‌سایت‌هایی خلاقانه، کاربرپسند و بهینه‌سازی‌شده برای موتورهای جستجو طراحی می‌کنیم که به رشد کسب‌وکار شما کمک می‌کند.",
@@ -11,11 +13,15 @@ export const metadata: Metadata = {
     title: "داده پردازان افق آینده صدرا | طراحی و توسعه وب حرفه‌ای",
     description:
       "ما وب‌سایت‌هایی خلاقانه، کاربرپسند و بهینه‌سازی‌شده برای موتورهای جستجو طراحی می‌کنیم که به رشد کسب‌وکار شما کمک می‌کند.",
-    images: ["/img/logo-color.png"], // تصویر پیش‌فرض برای کل سایت
+    // images: ["/img/logo-color.png"], // تصویر پیش‌فرض برای کل سایت
   },
   robots: {
-    index: true, 
+    index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 export default function RootLayout({
