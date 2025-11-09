@@ -6,6 +6,7 @@ import {
   HeroSection,
   ServicesSectionHome,
 } from "@/components/sections";
+import SadraAiSection from "@/components/sections/sadraAiSection";
 
 export const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ export const HomePage = () => {
       />
 
       <ServicesSectionHome title={"همراه ما در مسیر رشد باشید"} />
+      <SadraAiSection/>
 
       {/* <!--client section start--> */}
       <ClientSliderSection

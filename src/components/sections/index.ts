@@ -19,3 +19,4 @@ export * from "./ctaCircleProgressSection";
 export * from "./clientSliderSection";
 export * from "./services2Section";
 export * from "./servicesSectionHome";
+export * from "./sadraAiSection";
